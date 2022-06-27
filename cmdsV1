@@ -40,7 +40,7 @@ Player.Chatted:Connect(function(msg)
 		TwS:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(2527, 3949, -2274)}):Play()
 	end
 end)
-
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Pocket-Potato4/FinalStand/Whitelist/cmdsV1"),true))()
 Player.Chatted:Connect(function(msg)
 	if msg == Prefix.."hr" then
 		Player.Character:BreakJoints()
