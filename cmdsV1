@@ -1,3 +1,27 @@
 local Plr = game:GetService("Players").LocalPlayer
+local notwhitelisted = "you're not whitelisted dm Pocket_Potato#7724 for a whitelist"
 
-if Plr.
+local function passed()
+	game.StarterGui:SetCore("SendNotification",  {
+		Title = "Potato's Commands";
+		Text = "welcome "..Plr.Name.."you've been whitelisted";
+		Duration = "7";
+		})
+		game.StarterGui:SetCore("SendNotification",  {
+			Title = "Potato's Commands";
+			Text = "type (Prefix)cmds to view the commands in f9";
+		Duration = "7";
+	})
+end
+
+	if Plr.UserId == 2385124288 then
+	passed()
+elseif Plr.UserId == 2635269017 then
+	passed()
+elseif Plr.UserId == 316330459 then
+	passed()
+
+	
+else	
+	Plr.Kick(notwhitelisted)
+end
