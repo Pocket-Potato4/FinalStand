@@ -92,7 +92,7 @@ Player.Chatted:Connect(function(msg)
 		TS:Teleport(3565304751, Player)
 	elseif msg == Prefix.."zaros" then
 		TS:Teleport(2651456105, Player)
-		
+	
 		
 	end
 end)
